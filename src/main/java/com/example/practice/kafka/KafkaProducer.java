@@ -1,10 +1,11 @@
 package com.example.practice.kafka;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.logging.Logger;
+
 
 @Service
 public class KafkaProducer {
@@ -19,7 +20,7 @@ public class KafkaProducer {
 
     public void sendMessage(String message){
         LOGGER.info(String.format("Message sent %s", message));
-        kafkaTemplate.send("practiceTopic", message);
+        kafkaTemplate.send("topicJsonName", message);
     }
 }
 

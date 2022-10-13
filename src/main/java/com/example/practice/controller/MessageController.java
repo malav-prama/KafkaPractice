@@ -1,4 +1,4 @@
-package com.example.practice;
+package com.example.practice.controller;
 
 import com.example.practice.kafka.KafkaProducer;
 import org.springframework.http.ResponseEntity;
