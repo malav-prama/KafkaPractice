@@ -22,6 +22,11 @@ public class KafkaProducer {
         LOGGER.info(String.format("Message sent %s", message));
         kafkaTemplate.send("topicJsonName", message);
     }
+
+    public void send(String topic, String payload) {
+        LOGGER.info("sending payload='{}' to topic='{}'", payload, topic);
+        kafkaTemplate.send(topic, payload);
+    }
 }
 
 

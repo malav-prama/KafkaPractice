@@ -28,4 +28,6 @@ public class JsonKafkaProducer {
 
         kafkaTemplate.send(message);
     }
+
+
 }
